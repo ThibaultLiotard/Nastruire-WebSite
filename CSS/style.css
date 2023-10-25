@@ -1,0 +1,157 @@
+@font-face {
+    font-family: AbrilFatface;
+    src: url("../fonts/AbrilFatface-Regular.ttf");
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url("../fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: Anton;
+    src: url("../fonts/Anton-Regular.ttf");
+}
+
+* {
+    overflow: overlay;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #127A7A;
+}
+
+
+#firstPage {
+    width: 100vw;
+    height: 100vh;
+}
+
+#firstPage img {
+    width: 100%;
+}
+
+#firstPage #waves-1 {
+    transform: rotate(180deg);
+}
+
+
+#firstPage #backgroundMainPage {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#firstPage #waves-2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#firstPage #arrow {
+    position: absolute;
+    left: 0;
+    bottom: 2vh;
+    width: 3vw;
+    filter: invert();
+    left: 50%;
+    transform: rotate(90deg) translate(-50%);
+    transition: all 0.5s;
+}
+
+#firstPage #arrow:hover {
+    cursor: pointer;
+    transform: rotate(90deg) translate(-50%) scale(1.2);
+}
+
+#firstPage #mainTitle {
+    position: absolute;
+    font-family: AbrilFatface;
+    font-weight: 200;
+    color: white;
+    font-size: 4vw;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#secondPage {
+    width: 100vw;
+    height: 100vh;
+}
+
+#secondPage #mainTitle {
+    font-family: Anton;
+    color: white;
+    margin-left: 5vw;
+    margin-top: 1vh;
+    font-size: 3vw;
+    font-weight: 300;
+    text-decoration: underline;
+}
+
+#secondPage #arrow {
+    position: absolute;
+    left: 0;
+    bottom: -100vh;
+    width: 3vw;
+    filter: invert();
+    left: 50%;
+    transform: rotate(90deg) translate(-50%);
+    transition: all 0.5s;
+}
+
+#secondPage #arrow:hover {
+    cursor: pointer;
+    transform: rotate(90deg) translate(-50%) scale(1.2);
+}
+
+#secondPage p {
+    margin-left: 7vw;
+    margin-top: 2vh;
+    font-family: Poppins;
+    color: white;
+    font-size: 1.05vw;
+    width: 40vw;
+}
+
+#secondPage #grp_main{
+    position: absolute;
+    top: 120vh;
+    margin-left: 55vw;
+    width: 40vw;
+}
+
+
+#thirdPage {
+    width: 100vw;
+    height: 100vh;
+}
+
+#thirdPage #mainTitle {
+    font-family: Anton;
+    color: white;
+    margin-left: 5vw;
+    margin-top: 1vh;
+    font-size: 3vw;
+    font-weight: 300;
+    text-decoration: underline;
+}
+
+#thirdPage #arrow {
+    position: absolute;
+    left: 0;
+    bottom: -200vh;
+    width: 3vw;
+    filter: invert();
+    left: 50%;
+    transform: rotate(90deg) translate(-50%);
+    transition: all 0.5s;
+}
+
+#thirdPage #arrow:hover {
+    cursor: pointer;
+    transform: rotate(90deg) translate(-50%) scale(1.2);
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,8 +14,46 @@
     <link rel="stylesheet" href="./CSS/reset.css">
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
+
 <body>
-    
+    <nav></nav>
+    <div id="firstPage">
+        <img src="./assets/plage.png" alt="backgroundMainPage" id="backgroundMainPage">
+        <img src="./assets/waves.png" alt="waves" id="waves-1">
+        <img src="./assets/waves.png" alt="waves" id="waves-2">
+        <img src="./assets/arrow.svg" alt="arrow" id="arrow" onclick="goToSecondPage()">
+        <h1 id="mainTitle">Nastruire</h1>
+    </div>
+    <div id="secondPage">
+        <h1 id="mainTitle">Qu’est-ce-que Nastruire ?</h1>
+        <p>Nastruire est apparu grâce à la collaboration d'excellents amis qui un jour ont décidé de participer à un
+            concours informatique. Ils voulaient aider la planète et la sauver mais à leur échelle ils ne pouvaient pas
+            faire grand-chose. Ils ont donc décidé d'utiliser leurs talents et leurs compétences en créant un jeu vidéo
+            dans le but de sensibiliser tout le monde mais surtout les plus petits. En effet, si nous voulons sauver
+            notre planète il faut éduquer correctement les jeunes pour qu'ils fassent les bons gestes tout au long de
+            leur vie. Nastruire est apparu le 5 mai 2022 après 3 mois de travail intensif. Quoi de mieux qu'un jeu vidéo
+            pour instruire les gens à ramasser les déchets et par la suite à les trier dans les bonnes poubelles de
+            recyclage.<br><br>
+            Vous pouvez choisir entre 2 cartes pour aller ramasser les déchets. Vous apparaissez sur la carte que vous
+            avez choisie et votre but est de ramasser les 50 déchets posés sur la carte. Dès que vous ramassez un
+            déchet, celui-ci apparaît dans votre inventaire et y reste jusqu'au moment où vous le déposerez dans la
+            bonne poubelle de tri.<br><br>
+            Pour pouvoir vous instruire un peu plus, l'équipe de Nastruire a fait des recherches sur internet pour
+            pouvoir vous informer de combien de kg de déchets sont jetés chaque année sur le sol, sur le temps de
+            décomposition des déchets et de leurs impacts sur l'environnement. C'est pour cela que dès que vous ramassez
+            un déchet, il faut le jeter dans la poubelle adéquate.
+            Mais ce n’est pas la seule chose que vous trouverez dans ce jeu. Il y a aussi des cours de sensibilisation
+            sur les dangers d’internet.</p>
+        <img src="./assets/grp_main.png" alt="grp_main" id="grp_main">
+        <img src="./assets/arrow.svg" alt="arrow" id="arrow" onclick="goToThirdPage()">
+    </div>
+    <div id="thirdPage">
+        <h1 id="mainTitle">Obtenir Nastruire :</h1>
+        
+        <img src="./assets/arrow.svg" alt="arrow" id="arrow">
+    </div>
+
     <script src="./index.js"></script>
 </body>
+
 </html>
