@@ -81,7 +81,48 @@
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
         </div>
-        <img src="./assets/arrow.svg" alt="arrow" id="arrow">
+        <img src="./assets/arrow.svg" alt="arrow" id="arrow" onclick="goToFivesPage()">
+    </div>
+    <div id="fivesPage">
+        <h1 id="mainTitle">Qui sommes-nous ?</h1>
+        <p class="main-text-fives">Nous sommes un groupe d'amis qui se sont rencontrés en classe de terminal et qui sont devenus d'excellent ami. Nous avons le même but, rentrer dans nos écoles informatiques et devenir d'excellent programmeur. Dans ce groupe nous avons Evan, Simon, Thibault et Bastien.</p>
+        <img src="./assets/team_picture.jpg" alt="team_picture" id="team_picture">
+        <div class="carousel-container">
+            <div class="group_presentation">
+                <div class="item" id="Evan">
+                    <h2>Evan Lamy</h2>
+                    <div class="item-2">
+                        <img src="./assets/temp_picture.png" alt="evan-picture">
+                        <p>C'est le plus jeune du groupe et il souhaite intégrer une école informatique de programmation. C'est un passionné de jeu vidéo, d'informatique, de musique et d'animation, il pratique de la guitare. Son plus grand rêve est de trouver un travail dans une entreprise de jeu vidéo et de vivre heureux.</p>
+                    </div>
+                </div>
+                <div class="item" id="Simon">
+                    <h2>Simon Goy</h2>
+                    <div class="item-2">
+                        <img src="./assets/temp_picture.png" alt="simon-picture">
+                        <p>Il a 18 ans et il souhaite pouvoir intégrer une école d'ingénieur. C'est un passionné d'informatique, de musique, il pratique la guitare et la basse. Son plus grand rêve est de créer une application utilisée par un grand groupe.</p>
+                    </div>
+                </div>
+                <img src="./assets/arrow.svg" alt="rigth_arrow" id="rigth_arrow" onclick="move_to_rigth()">
+            </div>
+            <div class="group_presentation">
+                <img src="./assets/arrow.svg" alt="left_arrow" id="left_arrow" onclick="move_to_left()">
+                <div class="item" id="Thibault">
+                    <h2>Thibault Liotard</h2>
+                    <div class="item-2">
+                        <img src="./assets/temp_picture.png" alt="thibault-picture">
+                        <p>Il a 18 ans et il est déjà pris dans son école de programmation de jeu vidéo. C'est un passionné informatique et de jeu vidéo. Son plus grand rêve est de créer sa propre entreprise de jeu vidéo et souhaite devenir entrepreneur.</p>
+                    </div>
+                </div>
+                <div class="item" id="Bastien">
+                    <h2>Bastien Bonora</h2>
+                    <div class="item-2">
+                        <img src="./assets/temp_picture.png" alt="bastien-picture">
+                        <p>Il a 18 ans et il souhaite pouvoir intégrer une école de télécommunication. C'est un passionné de jeu vidéo, d'informatique et de hacking. Son plus grand rêve est de devenir un hacker éthique.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="./index.js"></script>
