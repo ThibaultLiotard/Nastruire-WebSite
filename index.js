@@ -9,3 +9,9 @@ function goToThirdPage(){
     .querySelector("#thirdPage")
     .scrollIntoView({ behavior: "smooth", block: "start" });
 }
+
+function goToFourthPage(){
+    document
+    .querySelector("#fourthPage")
+    .scrollIntoView({ behavior: "smooth", block: "start" });
+}

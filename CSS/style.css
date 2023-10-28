@@ -195,3 +195,48 @@ body {
     font-weight: 500;
     font-size: 1.5vw;
 }
+
+
+#fourthPage {
+    width: 100vw;
+    height: 100vh;
+}
+
+#fourthPage #mainTitle {
+    font-family: Anton;
+    color: white;
+    margin-left: 5vw;
+    margin-top: 1vh;
+    font-size: 3vw;
+    font-weight: 300;
+    text-decoration: underline;
+}
+
+#fourthPage #arrow {
+    position: absolute;
+    left: 0;
+    bottom: -300vh;
+    width: 3vw;
+    filter: invert();
+    left: 50%;
+    transform: rotate(90deg) translate(-50%);
+    transition: all 0.5s;
+}
+
+#fourthPage #arrow:hover {
+    cursor: pointer;
+    transform: rotate(90deg) translate(-50%) scale(1.2);
+}
+
+#fourthPage .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#fourthPage .gallery-item{
+    width: 30vw;
+    margin: 1vw;
+}
+
