@@ -117,7 +117,7 @@ body {
     width: 40vw;
 }
 
-#secondPage #grp_main{
+#secondPage #grp_main {
     position: absolute;
     top: 120vh;
     margin-left: 55vw;
@@ -154,4 +154,44 @@ body {
 #thirdPage #arrow:hover {
     cursor: pointer;
     transform: rotate(90deg) translate(-50%) scale(1.2);
+}
+
+#thirdPage .downloads {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10vh;
+}
+
+#thirdPage .download {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#thirdPage .download img{
+    width: 15vw;
+}
+
+#thirdPage .download a{
+    transition: all 0.5s;
+}
+
+#thirdPage .download a:hover{
+    transform: scale(1.1);
+}
+
+#thirdPage .download button{
+    background-color: transparent;
+    border: solid white 0.2vw;
+    padding: 0.7vw;
+    border-radius: 1.3vw;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    color: white;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 1.5vw;
 }
