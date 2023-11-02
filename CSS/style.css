@@ -79,6 +79,8 @@ body {
 #secondPage {
     width: 100vw;
     height: 100vh;
+    background: rgb(18, 122, 122);
+    background: linear-gradient(180deg, rgba(18, 122, 122, 1) 0%, rgba(41, 151, 126, 1) 50%, rgba(18, 122, 122, 1) 100%);
 }
 
 #secondPage #mainTitle {
@@ -197,6 +199,8 @@ body {
 #fourthPage {
     width: 100vw;
     height: 100vh;
+    background: rgb(18, 122, 122);
+    background: linear-gradient(180deg, rgba(18, 122, 122, 1) 0%, rgba(41, 151, 126, 1) 50%, rgba(18, 122, 122, 1) 100%);
 }
 
 #fourthPage #mainTitle {
@@ -290,18 +294,18 @@ body {
     font-weight: 700;
 }
 
-#fivesPage .item-2{
+#fivesPage .item-2 {
     margin-top: 1vh;
     display: flex;
-    flex-direction: row;    
+    flex-direction: row;
 }
 
-#fivesPage img{
+#fivesPage img {
     width: 10vw;
     margin: 0;
 }
 
-#fivesPage .item-2 p{
+#fivesPage .item-2 p {
     font-family: Poppins;
     color: white;
     font-size: 1.05vw;
@@ -315,19 +319,19 @@ body {
     display: flex;
 }
 
-#fivesPage #rigth_arrow{
+#fivesPage #rigth_arrow {
     width: 3vw;
     filter: invert();
     transition: all 0.5s;
     margin-right: 1.5vw;
 }
 
-#fivesPage #rigth_arrow:hover{
+#fivesPage #rigth_arrow:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
 
-#fivesPage #left_arrow{
+#fivesPage #left_arrow {
     width: 3vw;
     filter: invert();
     transition: all 0.5s;
@@ -336,7 +340,14 @@ body {
     transform: rotate(180deg);
 }
 
-#fivesPage #left_arrow:hover{
+#fivesPage #left_arrow:hover {
     cursor: pointer;
     transform: scale(1.1) rotate(180deg);
+}
+
+footer{
+    box-shadow: 0px 5px 5px #106363, 0px -5px 5px #106363;
+    width: 100vw;
+    height: 20vh;
+    background-color: #106363;
 }
