@@ -163,6 +163,7 @@ body {
 }
 
 #thirdPage .download {
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
