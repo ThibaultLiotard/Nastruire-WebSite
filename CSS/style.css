@@ -68,12 +68,13 @@ body {
 
 #firstPage #mainTitle {
     position: absolute;
+    display: block;
     font-family: AbrilFatface;
     font-weight: 200;
     color: white;
     font-size: 5vw;
-    left: 48.1vw;
-    transform: translate(-50%);
+    text-align: center;
+    width: 100vw;
 }
 
 #secondPage {
@@ -86,8 +87,8 @@ body {
 #secondPage #mainTitle {
     font-family: Anton;
     color: white;
-    margin-left: 5vw;
-    margin-top: 1vh;
+    margin-left: 6vw;
+    margin-top: 6vh;
     font-size: 3vw;
     font-weight: 300;
     text-decoration: underline;
@@ -111,16 +112,16 @@ body {
 
 #secondPage p {
     margin-left: 7vw;
-    margin-top: 2vh;
+    margin-top: 9vh;
     font-family: Poppins;
     color: white;
-    font-size: 1.05vw;
+    font-size: 1.2vw;
     width: 40vw;
 }
 
 #secondPage #grp_main {
     position: absolute;
-    top: 120vh;
+    top: 124vh;
     margin-left: 55vw;
     width: 40vw;
 }
@@ -133,8 +134,8 @@ body {
 #thirdPage #mainTitle {
     font-family: Anton;
     color: white;
-    margin-left: 5vw;
-    margin-top: 1vh;
+    margin-left: 6vw;
+    margin-top: 6vh;
     font-size: 3vw;
     font-weight: 300;
     text-decoration: underline;
@@ -207,8 +208,8 @@ body {
 #fourthPage #mainTitle {
     font-family: Anton;
     color: white;
-    margin-left: 5vw;
-    margin-top: 1vh;
+    margin-left: 6vw;
+    margin-top: 6vh;
     font-size: 3vw;
     font-weight: 300;
     text-decoration: underline;
@@ -250,8 +251,8 @@ body {
 #fivesPage #mainTitle {
     font-family: Anton;
     color: white;
-    margin-left: 5vw;
-    margin-top: 1vh;
+    margin-left: 6vw;
+    margin-top: 6vh;
     font-size: 3vw;
     font-weight: 300;
     text-decoration: underline;
