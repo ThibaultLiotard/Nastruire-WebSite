@@ -1,0 +1,62 @@
+@font-face {
+    font-family: Anton;
+    src: url("../../assets/fonts/Anton-Regular.ttf");
+}
+
+* {
+    overflow: overlay;
+    overflow-x: hidden;
+    background-color: #005471;
+}
+
+body {
+    background: linear-gradient(252deg, #00A593 0%, #009F9A 0.01%, #005471 43.23%, #002F4C 100%);
+}
+
+
+.sections {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+#wavesTop {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 10;
+}
+
+.main #mainTitle {
+    background-color: transparent;
+    position: absolute;
+    display: block;
+    width: 100vw;
+    top: 37vh;
+    font-family: Anton;
+    color: #FFFCDB;
+    font-weight: 400;
+    font-size: 4.8vw;
+    text-align: center;
+}
+
+#beach {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#wavesBottom {
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: rotate(180deg);
+    width: 100vw;
+    z-index: 10;
+}
