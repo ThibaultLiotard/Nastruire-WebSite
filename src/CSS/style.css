@@ -126,3 +126,32 @@ body {
     left: 57vw;
     width: 35vw;
 }
+
+#arrowToGallery {
+    background-color: transparent;
+    position: absolute;
+    display: block;
+    z-index: 20;
+    width: 4vw;
+    top: 190vh;
+    left: 50%;
+    transform: translate(-50%);
+    transition: all 0.5s;
+}
+
+#arrowToGallery:hover {
+    cursor: pointer;
+    transform: translate(-50%) scale(1.2);
+}
+
+.gallery .pictureGallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery .pictureGalleryItem {
+    width: 30vw;
+    margin: 1vw;
+}
