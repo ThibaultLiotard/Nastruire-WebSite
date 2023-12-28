@@ -3,9 +3,17 @@
     src: url("../../assets/fonts/Anton-Regular.ttf");
 }
 
+@font-face {
+    font-family: Poppins;
+    src: url("../../assets/fonts/Poppins-Regular.ttf");
+}
+
 * {
     overflow: overlay;
     overflow-x: hidden;
+}
+
+html {
     background-color: #005471;
 }
 
@@ -17,6 +25,16 @@ body {
 .sections {
     width: 100vw;
     height: 100vh;
+}
+
+.sectionTitle {
+    display: block;
+    margin-top: 2vh;
+    text-align: center;
+    font-family: Anton;
+    color: #FFFCDB;
+    font-weight: 400;
+    font-size: 3vw;
 }
 
 
@@ -59,4 +77,52 @@ body {
     transform: rotate(180deg);
     width: 100vw;
     z-index: 10;
+}
+
+#arrowToIntroduction {
+    background-color: transparent;
+    position: absolute;
+    display: block;
+    z-index: 20;
+    width: 4vw;
+    top: 90vh;
+    left: 50%;
+    transform: translate(-50%);
+    transition: all 0.5s;
+}
+
+#arrowToIntroduction:hover {
+    cursor: pointer;
+    transform: translate(-50%) scale(1.2);
+}
+
+.introduction .title {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.introduction #NastruireLogo {
+    background-color: transparent;
+    position: absolute;
+    width: 5.5vw;
+    left: 37vw;
+    top: 101vh;
+}
+
+
+.introduction p {
+    font-family: Poppins;
+    color: #ffffff;
+    font-size: 1.2vw;
+    width: 45vw;
+    margin-left: 8vw;
+    margin-top: 13vh;
+}
+
+.introduction img {
+    position: absolute;
+    top: 129vh;
+    left: 57vw;
+    width: 35vw;
 }
