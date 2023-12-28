@@ -155,3 +155,61 @@ body {
     width: 30vw;
     margin: 1vw;
 }
+
+#arrowToDownloads {
+    background-color: transparent;
+    position: absolute;
+    display: block;
+    z-index: 20;
+    width: 4vw;
+    top: 290vh;
+    left: 50%;
+    transform: translate(-50%);
+    transition: all 0.5s;
+}
+
+#arrowToDownloads:hover {
+    cursor: pointer;
+    transform: translate(-50%) scale(1.2);
+}
+
+.downloads .downloadSection{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 15vh;
+}
+
+.downloads .downloadItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5vw;
+}
+
+.downloads img{
+    width: 17vw;
+}
+
+.downloads a{
+    padding: 1.5vw;
+}
+
+.downloads button{
+    background-color: transparent;
+    border: solid white;
+    border-radius: 1vw;
+    margin-top: 4vh;
+    padding: 1vw;
+    font-family: Poppins;
+    font-size: 1.2vw;
+    color: white;
+    transition: all 0.5s;
+    width: 15vw;
+}
+
+.downloads button:hover{
+    transform: scale(1.1);
+}
