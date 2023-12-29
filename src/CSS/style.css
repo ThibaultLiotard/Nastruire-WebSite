@@ -48,7 +48,7 @@ body {
 }
 
 header {
-    /* display: none; */
+    display: none;
     position: fixed;
     z-index: 200;
     top: 2vh;
@@ -305,20 +305,29 @@ header h1:hover {
     border-radius: 2vw;
 }
 
+.team .teamItem h1{
+    text-align: center;
+    font-size: 1.8vw;
+    font-family: Anton;
+    font-weight: 200;
+    color: #FFFCDB;
+    margin-top: 2vh;
+}
+
 .team .teamItem p {
     color: white;
     font-family: Poppins;
     font-size: 1vw;
     margin-left: 2vw;
     margin-right: 2vw;
-    margin-top: 5vh;
+    margin-top: 3vh;
 }
 
 .team a {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 16vh;
+    margin-top: 8vh;
 }
 
 .team .linkedinIcon {
