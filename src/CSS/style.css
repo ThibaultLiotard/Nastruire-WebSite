@@ -193,10 +193,6 @@ body {
     width: 17vw;
 }
 
-.downloads a{
-    padding: 1.5vw;
-}
-
 .downloads button{
     background-color: transparent;
     border: solid white;
@@ -207,9 +203,10 @@ body {
     font-size: 1.2vw;
     color: white;
     transition: all 0.5s;
-    width: 15vw;
+    width: 17vw;
+    margin: 0.5vw;
 }
 
 .downloads button:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
