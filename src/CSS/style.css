@@ -37,6 +37,59 @@ body {
     font-size: 3vw;
 }
 
+#burgerMenuIcon {
+    position: fixed;
+    z-index: 100;
+    top: 1vh;
+    left: 1vw;
+    width: 3vw;
+    filter: invert();
+    cursor: pointer;
+}
+
+header {
+    /* display: none; */
+    position: fixed;
+    z-index: 200;
+    top: 2vh;
+    left: 1vw;
+    width: 20vw;
+    height: 80vh;
+    border-radius: 2vw;
+    border: white solid 0.1vw;
+    background: linear-gradient(252deg, #00A593 0%, #009F9A 0.01%, #005471 43.23%, #002F4C 100%);
+}
+
+header #crossMenu {
+    position: absolute;
+    right: 1vw;
+    width: 3vw;
+    filter: invert();
+    cursor: pointer;
+}
+
+header #logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+    width: 10vw;
+}
+
+header h1 {
+    font-family: Anton;
+    font-weight: 200;
+    color: white;
+    font-size: 1.5vw;
+    margin-top: 2vh;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+header h1:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
 
 #wavesTop {
     background-color: transparent;
@@ -173,7 +226,7 @@ body {
     transform: translate(-50%) scale(1.2);
 }
 
-.downloads .downloadSection{
+.downloads .downloadSection {
     display: flex;
     justify-content: space-evenly;
     margin-left: 5vw;
@@ -181,7 +234,7 @@ body {
     margin-top: 15vh;
 }
 
-.downloads .downloadItem{
+.downloads .downloadItem {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -189,11 +242,11 @@ body {
     padding: 1.5vw;
 }
 
-.downloads img{
+.downloads img {
     width: 17vw;
 }
 
-.downloads button{
+.downloads button {
     background-color: transparent;
     border: solid white;
     border-radius: 1vw;
@@ -207,7 +260,7 @@ body {
     margin: 0.5vw;
 }
 
-.downloads button:hover{
+.downloads button:hover {
     transform: scale(1.05);
 }
 
@@ -228,12 +281,12 @@ body {
     transform: translate(-50%) scale(1.2);
 }
 
-.team .teamSection{
+.team .teamSection {
     display: flex;
     justify-content: space-evenly;
 }
 
-.team .teamItem{
+.team .teamItem {
     display: flex;
     flex-direction: column;
     border: solid white 0.2vw;
@@ -243,7 +296,7 @@ body {
     height: 78vh;
 }
 
-.team .teamItem .picture{
+.team .teamItem .picture {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -252,7 +305,7 @@ body {
     border-radius: 2vw;
 }
 
-.team .teamItem p{
+.team .teamItem p {
     color: white;
     font-family: Poppins;
     font-size: 1vw;
@@ -261,13 +314,54 @@ body {
     margin-top: 5vh;
 }
 
-.team a{
+.team a {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 16vh;
 }
 
-.team .linkedinIcon{
+.team .linkedinIcon {
     width: 2vw;
+}
+
+@keyframes menuBurgerArrived {
+    0% {
+        margin-left: -100vw;
+    }
+
+    100% {
+        margin-left: 0vw;
+    }
+}
+
+@keyframes arrivedEffect {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes menuBurgerDepart {
+    0% {
+        margin-left: 0vw;
+    }
+
+    100% {
+        margin-left: -100vw;
+    }
+}
+
+
+@keyframes departEffect {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
