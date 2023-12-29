@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -7,134 +7,123 @@
     <meta name="description" content="Nastruire Web Site">
     <meta name="author" content="Pierre-Louis ROUSSEAUX">
     <meta name="robots" content="index, follow">
-    <link rel="icon" href="./assets/logo-page.png" type="image/x-icon">
+    <link rel="icon" href="./assets/images/Nastruire_Logo_Full.png" type="image/x-icon">
 
     <title>Nastuire</title>
 
-    <link rel="stylesheet" href="./CSS/reset.css">
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./src/CSS/reset.css">
+    <link rel="stylesheet" href="./src/CSS/style.css">
 </head>
 
 <body>
-    <nav></nav>
-    <div id="firstPage">
-        <img src="./assets/beach.png" alt="backgroundMainPage" id="backgroundMainPage">
-        <img src="./assets/waves.png" alt="waves" id="waves-1">
-        <img src="./assets/waves.png" alt="waves" id="waves-2">
-        <img src="./assets/arrow.svg" alt="arrow" id="arrow" onclick="goToSecondPage()">
+    <img src="./assets/images/burgerMenu.svg" onclick="showBurgerMenu()" id="burgerMenuIcon" alt="burgerMenuIcon">
+    <header>
+        <img src="./assets/images/crossMenu.svg" onclick="hideBurgerMenu()" id="crossMenu" alt="crossMenu">
+        <img src="./assets/images/Nastruire_Logo_Full.png" id="logo" alt="Nastruire_Logo_Full">
+        <h1 onclick="clickOnSection('main')">Accueil</h1>
+        <h1 onclick="clickOnSection('introduction')">Nastruire ?</h1>
+        <h1 onclick="clickOnSection('gallery')">Gallerie</h1>
+        <h1 onclick="clickOnSection('downloads')">Téléchargement</h1>
+        <h1 onclick="clickOnSection('team')">Notre Equipe</h1>
+    </header>
+    <div class="sections main">
+        <img src="./assets/images/waves.png" id="wavesTop" alt="waves top">
+        <img src="./assets/images/beach.png" id="beach" alt="beach">
         <h1 id="mainTitle">Nastruire</h1>
+        <img src="./assets/images/waves.png" id="wavesBottom" alt="waves bottom">
+        <img src="./assets/images/arrow.png" id="arrowToIntroduction" onclick="changeSection('introduction')"
+            alt="arrow">
     </div>
-    <div id="secondPage">
-        <h1 id="mainTitle">Qu’est-ce-que Nastruire ?</h1>
-        <p>Nastruire est né d'une collaboration entre amis passionnés d'informatique, initié lors d'un concours. Lancé
-            le 5 mai 2022 après trois mois de développement, ce jeu vidéo vise à sensibiliser à la protection de
-            l'environnement, en mettant l'accent sur l'éducation des jeunes. <br><br>Les joueurs choisissent parmi deux
-            cartes
-            pour collecter 50 déchets, apprenant l'importance du ramassage et du tri. Chaque déchet collecté offre des
-            informations sur sa décomposition et son impact environnemental. Outre les leçons sur le recyclage,
-            Nastruire propose également des cours sur la sécurité et les dangers d'internet, enrichissant ainsi son
-            offre éducative.
-        </p>
-        <img src="./assets/grp_main.png" alt="grp_main" id="grp_main">
-        <img src="./assets/arrow.svg" alt="arrow" id="arrow" onclick="goToThirdPage()">
-    </div>
-    <div id="thirdPage">
-        <h1 id="mainTitle">Obtenir Nastruire :</h1>
-        <div class="downloads">
-            <div class="download" id="windows">
-                <img src="./assets/windows.png" alt=windows_logo">
-                <a href="https://mega.nz/file/td9hzayT#p4SLx2LRQ8P3QBaJMPqXj7NrsHkBKrU3hTfsKwjtoQU"
-                    target="_blank"><button>Télécharger</button></a>
-            </div>
-            <div class="download" id="macOS">
-                <img src="./assets/apple.png" alt="apple_logo">
-                <a href="https://mega.nz/file/gRFTDQDL#U1EPBEdfr7DGRCWcE4k79C3GZa35vD9VP0GN8Tvm6U4"
-                    target="_blank"><button>Télécharger</button></a>
-            </div>
-            <div class="download" id="linux">
-                <img src="./assets/linux.png" alt="linux_logo">
-                <a href="https://mega.nz/file/ZVsSkDKI#r-n9LMp6V4ZYMRLDs8ozA4-LKR_XjleV7NxHB0hFOCE"
-                    target="_blank"><button>Télécharger</button></a>
-            </div>
+    <div class="sections introduction">
+        <div class="title">
+            <img id="NastruireLogo" src="./assets/images/Nastruire_Logo_Full.png" alt="Nastruire Logo">
+            <h1 class="sectionTitle">Nastruire ?</h1>
         </div>
-        <img src="./assets/arrow.svg" alt="arrow" id="arrow" onclick="goToFourthPage()">
+        <p>Nastruire est né d'une collaboration entre amis passionnés d'informatique, initié lors d'un concours
+            lancé en
+            février 2022. C’est après trois mois de développement, qu’un jeu vidéo visant à sensibiliser à la
+            protection
+            de l'environnement, en mettant l'accent sur l'éducation des jeunes est né.<br><br>
+
+            Ce sont donc deux cartes qui seront proposées aux joueurs afin de collecter 50 déchets. A chaque
+            ramassage,
+            des informations sont donnée sur la décomposition et l’impact environnemental de chacun de ces
+            déchets.<br><br>
+
+            Outre la sensibilisation sur le recyclage, Nastruire propose également des cours sur l’informatique en
+            lien
+            avec la passion de notre équipe. Internet devenant de plus en plus vaste, dangereux et difficile à
+            comprendre, il est important d’avoir les bases pour s’initier dans ce domaine.</p>
+        <img src="./assets/images/grp_main.png" alt="">
+        <img src="./assets/images/arrow.png" id="arrowToGallery" onclick="changeSection('gallery')" alt="arrow">
     </div>
-    <div id="fourthPage">
-        <h1 id="mainTitle">Galerie :</h1>
-        <div class="gallery">
-            <img src="./assets/beach.png" alt="beach_image" class="gallery-item">
-            <img src="./assets/course.png" alt="course_image" class="gallery-item">
-            <img src="./assets/city.png" alt="city_image" class="gallery-item">
-            <iframe class="gallery-item" style="width: 30vw; height: 33vh;" width="358.4" height="201.6"
+    <div class="sections gallery">
+        <h1 class="sectionTitle">Gallerie</h1>
+        <div class="pictureGallery">
+            <img src="./assets/images/main_page.png" alt="beach_image" class="pictureGalleryItem">
+            <img src="./assets/images/beach.png" alt="beach_image" class="pictureGalleryItem">
+            <img src="./assets/images/course.png" alt="beach_image" class="pictureGalleryItem">
+            <iframe class="pictureGalleryItem" style="width: 30vw; height: 33vh;" width="358.4" height="201.6"
                 src="https://www.youtube.com/embed/bcijASZfKVM" title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
-            <img src="./assets/main_page.png" alt="main_page" class="gallery-item">
-            <iframe class="gallery-item" style="width: 30vw; height: 33vh;" width="358.4" height="201.6"
+            <img src="./assets/images/city.png" alt="beach_image" class="pictureGalleryItem">
+            <iframe class="pictureGalleryItem" style="width: 30vw; height: 33vh;" width="358.4" height="201.6"
                 src="https://www.youtube.com/embed/_fkYkO708pg" title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
-        <img src="./assets/arrow.svg" alt="arrow" id="arrow" onclick="goToFivesPage()">
+        <img src="./assets/images/arrow.png" id="arrowToDownloads" onclick="changeSection('downloads')" alt="arrow">
     </div>
-    <div id="fivesPage">
-        <h1 id="mainTitle">Qui sommes-nous ?</h1>
-        <p class="main-text-fives">Nous sommes un groupe d'amis qui se sont rencontrés en classe de terminal et qui sont
-            devenus d'excellent ami. Nous avons le même but, rentrer dans nos écoles informatiques et devenir
-            d'excellent programmeur. Dans ce groupe nous avons Evan, Simon, Thibault et Bastien.</p>
-        <img src="./assets/team_picture.jpg" alt="team_picture" id="team_picture">
-        <div class="carousel-container">
-            <div class="group_presentation">
-                <div class="item" id="Evan">
-                    <h2>Evan Lamy</h2>
-                    <div class="item-2">
-                        <img src="./assets/temp_picture.png" alt="evan-picture">
-                        <p>C'est le plus jeune du groupe et il souhaite intégrer une école informatique de
-                            programmation. C'est un passionné de jeu vidéo, d'informatique, de musique et d'animation,
-                            il pratique de la guitare. Son plus grand rêve est de trouver un travail dans une entreprise
-                            de jeu vidéo et de vivre heureux.</p>
-                    </div>
-                </div>
-                <div class="item" id="Simon">
-                    <h2>Simon Goy</h2>
-                    <div class="item-2">
-                        <img src="./assets/temp_picture.png" alt="simon-picture">
-                        <p>Il a 18 ans et il souhaite pouvoir intégrer une école d'ingénieur. C'est un passionné
-                            d'informatique, de musique, il pratique la guitare et la basse. Son plus grand rêve est de
-                            créer une application utilisée par un grand groupe.</p>
-                    </div>
-                </div>
-                <img src="./assets/arrow.svg" alt="rigth_arrow" id="rigth_arrow" onclick="move_to_rigth()">
+    <div class="sections downloads">
+        <h1 class="sectionTitle">Obtenir Nastruire</h1>
+        <div class="downloadSection">
+            <div class="downloadItem windows">
+                <img src="./assets/images/windows.png" alt="windows">
+                <a href="./"><button>Télécharger</button></a>
             </div>
-            <div class="group_presentation">
-                <img src="./assets/arrow.svg" alt="left_arrow" id="left_arrow" onclick="move_to_left()">
-                <div class="item" id="Thibault">
-                    <h2>Thibault Liotard</h2>
-                    <div class="item-2">
-                        <img src="./assets/temp_picture.png" alt="thibault-picture">
-                        <p>Il a 18 ans et il est déjà pris dans son école de programmation de jeu vidéo. C'est un
-                            passionné informatique et de jeu vidéo. Son plus grand rêve est de créer sa propre
-                            entreprise de jeu vidéo et souhaite devenir entrepreneur.</p>
-                    </div>
-                </div>
-                <div class="item" id="Bastien">
-                    <h2>Bastien Bonora</h2>
-                    <div class="item-2">
-                        <img src="./assets/temp_picture.png" alt="bastien-picture">
-                        <p>Il a 18 ans et il souhaite pouvoir intégrer une école de télécommunication. C'est un
-                            passionné de jeu vidéo, d'informatique et de hacking. Son plus grand rêve est de devenir un
-                            hacker éthique.</p>
-                    </div>
-                </div>
+            <div class="downloadItem mac">
+                <img src="./assets/images/mac.png" alt="mac">
+                <a href="./"><button>Télécharger</button></a>
+            </div>
+            <div class="downloadItem linux">
+                <img src="./assets/images/linux.png" alt="linux">
+                <a href="./"><button>Télécharger</button></a>
+            </div>
+        </div>
+        <img src="./assets/images/arrow.png" id="arrowToTeam" onclick="changeSection('team')" alt="arrow">
+    </div>
+    <div class="sections team">
+        <h1 class="sectionTitle">Notre Equipe</h1>
+        <div class="teamSection">
+            <div class="teamItem thibault">
+                <img src="./assets/images/thibault.jpeg" class="picture" alt="thibault">
+                <h1>Thibault</h1>
+                <p></p>
+                    <a href="https://www.linkedin.com/in/thibault-liotard-0b5b02237/" target="_blank"><img src="./assets/images/LinkedIn_icon.png" class="linkedinIcon" alt="linkedin"></a>
+            </div>
+            <div class="teamItem bastien">
+                <img src="./assets/images/bastien.jpeg" class="picture" alt="bastien">
+                <h1>Bastien</h1>
+                <p></p>
+                    <a href="https://www.linkedin.com/in/bastien-bonora/" target="_blank"><img src="./assets/images/LinkedIn_icon.png" class="linkedinIcon" alt="linkedin"></a>
+            </div>
+            <div class="teamItem simon">
+                <img src="./assets/images/simon.jpeg" class="picture" alt="simon">
+                <h1>Simon</h1>
+                <p></p>
+                    <a href="https://www.linkedin.com/in/simon-goy-a04668238/" target="_blank"><img src="./assets/images/LinkedIn_icon.png" class="linkedinIcon" alt="linkedin"></a>
+            </div>
+            <div class="teamItem evan">
+                <img src="./assets/images/evan.jpeg" class="picture" alt="evan">
+                <h1>Evan</h1>
+                <p></p>
+                    <a href="https://www.linkedin.com/in/evan-lamy-649672238/" target="_blank"><img src="./assets/images/LinkedIn_icon.png" class="linkedinIcon" alt="linkedin"></a>
             </div>
         </div>
     </div>
 
-    <footer>
-
-    </footer>
-
-    <script src="./index.js"></script>
+    <script src="./src/index.js"></script>
 </body>
 
 </html>
