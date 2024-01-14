@@ -132,6 +132,18 @@ header h1:hover {
     z-index: 10;
 }
 
+.main #beachMobile {
+    display: none;
+}
+
+.main #wavesTopMobile {
+    display: none;
+}
+
+.main #wavesBottomMobile {
+    display: none;
+}
+
 #arrowToIntroduction {
     background-color: transparent;
     position: absolute;
@@ -209,6 +221,10 @@ header h1:hover {
     margin: 1vw;
 }
 
+#iframeMobile {
+    display: none;
+}
+
 #arrowToDownloads {
     background-color: transparent;
     position: absolute;
@@ -264,6 +280,10 @@ header h1:hover {
     transform: scale(1.05);
 }
 
+.downloads p {
+    display: none;
+}
+
 #arrowToTeam {
     background-color: transparent;
     position: absolute;
@@ -300,7 +320,7 @@ header h1:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 4vh;
+    margin-top: 2vh;
     width: 16vw;
     border-radius: 2vw;
 }
@@ -312,7 +332,7 @@ header h1:hover {
     font-family: Anton;
     font-weight: 200;
     color: #FFFCDB;
-    margin-top: 2vh;
+    margin-top: 1vh;
 }
 
 .team .teamItem p {
@@ -322,7 +342,6 @@ header h1:hover {
     font-size: 1vw;
     margin-left: 2vw;
     margin-right: 2vw;
-    margin-top: 1vh;
     height: 30vh;
 }
 
@@ -384,5 +403,279 @@ header h1:hover {
 
     100% {
         opacity: 0;
+    }
+}
+
+@media screen and (orientation:portrait) {
+    .sections {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .sectionTitle {
+        display: block;
+        margin-top: 2vh;
+        text-align: center;
+        font-family: Anton;
+        color: #FFFCDB;
+        font-weight: 400;
+        font-size: 12vw;
+    }
+
+    #burgerMenuIcon {
+        position: fixed;
+        z-index: 100;
+        top: 1vh;
+        left: 1vw;
+        width: 12vw;
+        filter: invert();
+        cursor: pointer;
+    }
+
+    header {
+        display: none;
+        position: fixed;
+        z-index: 200;
+        top: 2%;
+        left: 1vw;
+        width: 98%;
+        height: 96%;
+        border-radius: 2vw;
+        border: white solid 0.1vw;
+        background: linear-gradient(252deg, #00A593 0%, #009F9A 0.01%, #005471 43.23%, #002F4C 100%);
+    }
+
+    header #crossMenu {
+        position: absolute;
+        right: 1vw;
+        width: 10vw;
+        filter: invert();
+        cursor: pointer;
+    }
+
+    header #logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5vh;
+        width: 35vw;
+    }
+
+    header h1 {
+        font-family: Anton;
+        font-weight: 200;
+        color: white;
+        font-size: 5vw;
+        margin-top: 3vh;
+        text-align: center;
+    }
+
+    .main #mainTitle {
+        background-color: transparent;
+        position: absolute;
+        display: block;
+        width: 100%;
+        top: 35%;
+        font-family: Anton;
+        color: #FFFCDB;
+        font-weight: 400;
+        font-size: 16.8vw;
+        text-align: center;
+    }
+
+
+    #beach {
+        display: none;
+    }
+
+    #wavesTop {
+        display: none;
+    }
+
+    #wavesBottom {
+        display: none;
+    }
+
+    .main #beachMobile {
+        display: block;
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .main #wavesTopMobile {
+        display: block;
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+    }
+
+    .main #wavesBottomMobile {
+        display: block;
+        background-color: transparent;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: rotate(180deg);
+        width: 100%;
+        z-index: 10;
+    }
+
+    #arrowToIntroduction {
+        display: none;
+    }
+
+    .introduction .title {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .introduction #NastruireLogo {
+        display: none;
+    }
+
+
+    .introduction p {
+        font-family: Poppins;
+        text-align: center;
+        color: #ffffff;
+        font-size: 3.5vw;
+        width: 96%;
+        margin-left: 2%;
+        margin-top: 8%;
+    }
+
+    .introduction img {
+        display: none;
+    }
+
+    #arrowToGallery {
+        display: none;
+    }
+
+    .gallery {
+        height: 200vh;
+    }
+
+    .gallery .pictureGallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gallery .pictureGalleryItem {
+        width: 96%;
+        margin: 2%;
+    }
+
+    #iframeDesktop {
+        display: none;
+    }
+
+    #iframeMobile {
+        display: block;
+    }
+
+    #arrowToDownloads {
+        display: none;
+    }
+
+    .downloads {
+        height: 50vh;
+    }
+
+    .downloads .downloadSection {
+        display: none;
+    }
+
+    .downloads p {
+        display: block;
+        font-family: Poppins;
+        text-align: center;
+        color: #ffffff;
+        font-size: 8vw;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 8%;
+    }
+
+    #arrowToTeam {
+        display: none;
+    }
+
+    .team {
+        height: 400vh;
+    }
+
+    .team .teamSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .team .teamItem {
+        display: flex;
+        flex-direction: column;
+        border: solid white 0.2vw;
+        border-radius: 2vw;
+        margin-top: 4vh;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        width: 96vw;
+        height: 70%;
+    }
+
+    .team .teamItem .picture {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4vh;
+        width: 80vw;
+        border-radius: 2vw;
+    }
+
+    .team .teamItem h1 {
+        overflow: hidden;
+        text-align: center;
+        font-size: 10vw;
+        font-family: Anton;
+        font-weight: 200;
+        color: #FFFCDB;
+        margin-top: 2vh;
+    }
+
+    .team .teamItem p {
+        overflow: hidden;
+        color: white;
+        font-family: Poppins;
+        font-size: 4vw;
+        text-align: center;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-top: 1vh;
+        height: 30%;
+    }
+
+    .team a {
+        margin-top: 5vh;
+        overflow: hidden;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .team .linkedinIcon {
+        width: 10vw;
+        padding: 1vw;
+        overflow: hidden;
     }
 }
