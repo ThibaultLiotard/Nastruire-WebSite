@@ -6,23 +6,23 @@ function changeSection(sectionName) {
 
 function showBurgerMenu() {
     document.querySelector("header").style.display = "block";
-    document.querySelector('header').style.animation = "menuBurgerArrived 1.5s"
-    document.querySelector('#burgerMenuIcon').style.animation = "departEffect 1.5s"
+    document.querySelector('header').style.animation = "menuBurgerArrived 1s"
+    document.querySelector('#burgerMenuIcon').style.animation = "departEffect 1s"
     setTimeout(() => {
         document.querySelector("#burgerMenuIcon").style.display = "none";
-    }, 1500);
-}
-
-function hideBurgerMenu() {
-    document.querySelector("#burgerMenuIcon").style.display = "block";
-    document.querySelector('header').style.animation = "menuBurgerDepart 1.5s"
-    document.querySelector('#burgerMenuIcon').style.animation = "arrivedEffect 1.5s"
-    setTimeout(() => {
-        document.querySelector("header").style.display = "none";
     }, 1000);
 }
 
-function clickOnSection(sectionName){
+function hideBurgerMenu() {
+    document.querySelector('header').style.animation = "menuBurgerDepart 1s"
+    document.querySelector('#burgerMenuIcon').style.animation = "arrivedEffect 1s"
+    setTimeout(() => {
+        document.querySelector("header").style.display = "none";
+        document.querySelector("#burgerMenuIcon").style.display = "block";
+    }, 800);
+}
+
+function clickOnSection(sectionName) {
     hideBurgerMenu()
     changeSection(sectionName)
 }

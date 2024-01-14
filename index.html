@@ -28,9 +28,12 @@
     </header>
     <div class="sections main">
         <img src="./assets/images/waves.png" id="wavesTop" alt="waves top">
+        <img src="./assets/images/wavesMobile.png" id="wavesTopMobile" alt="beach">
         <img src="./assets/images/beach.png" id="beach" alt="beach">
+        <img src="./assets/images/plageBackgroundMobile.png" id="beachMobile" alt="beach">
         <h1 id="mainTitle">Nastruire</h1>
         <img src="./assets/images/waves.png" id="wavesBottom" alt="waves bottom">
+        <img src="./assets/images/wavesMobile.png" id="wavesBottomMobile" alt="beach">
         <img src="./assets/images/arrow.png" id="arrowToIntroduction" onclick="changeSection('introduction')"
             alt="arrow">
     </div>
@@ -63,13 +66,25 @@
             <img src="./assets/images/main_page.png" alt="beach_image" class="pictureGalleryItem">
             <img src="./assets/images/beach.png" alt="beach_image" class="pictureGalleryItem">
             <img src="./assets/images/course.png" alt="beach_image" class="pictureGalleryItem">
-            <iframe class="pictureGalleryItem" style="width: 30vw; height: 33vh;" width="358.4" height="201.6"
-                src="https://www.youtube.com/embed/bcijASZfKVM" title="YouTube video player" frameborder="0"
+            <iframe id="iframeDesktop" class="pictureGalleryItem" style="width: 30vw; height: 33vh;" width="358.4"
+                height="201.6" src="https://www.youtube.com/embed/bcijASZfKVM" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe id="iframeMobile" class="pictureGalleryItem" style="width: 96vw; height: 33vh;" width="358.4"
+                height="201.6" src="https://www.youtube.com/embed/bcijASZfKVM" title="YouTube video player"
+                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
             <img src="./assets/images/city.png" alt="beach_image" class="pictureGalleryItem">
-            <iframe class="pictureGalleryItem" style="width: 30vw; height: 33vh;" width="358.4" height="201.6"
-                src="https://www.youtube.com/embed/_fkYkO708pg" title="YouTube video player" frameborder="0"
+            <iframe id="iframeDesktop" class="pictureGalleryItem" style="width: 30vw; height: 33vh;" width="358.4"
+                height="201.6" src="https://www.youtube.com/embed/_fkYkO708pg" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe id="iframeMobile" class="pictureGalleryItem" style="width: 96vw; height: 33vh;" width="358.4"
+                height="201.6" src="https://www.youtube.com/embed/_fkYkO708pg" title="YouTube video player"
+                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
@@ -91,6 +106,7 @@
                 <a href="./"><button>Télécharger</button></a>
             </div>
         </div>
+        <p>Pour obtenir Nastruire veuillez visitre notre site depuis un ordinateur.</p>
         <img src="./assets/images/arrow.png" id="arrowToTeam" onclick="changeSection('team')" alt="arrow">
     </div>
     <div class="sections team">
@@ -99,26 +115,38 @@
             <div class="teamItem thibault">
                 <img src="./assets/images/thibault.jpeg" class="picture" alt="thibault">
                 <h1>Thibault</h1>
-                <p></p>
-                    <a href="https://www.linkedin.com/in/thibault-liotard-0b5b02237/" target="_blank"><img src="./assets/images/LinkedIn_icon.png" class="linkedinIcon" alt="linkedin"></a>
+                <p>Mon rôle a été de prendre le lead de cette équipe, assurant ainsi la réussite et la bonne efficacité
+                    du projet. Tout en mettant à profit ma passion pour l'informatique. Je suis actuellement développeur
+                    de jeux vidéos.</p>
+                <a href="https://www.linkedin.com/in/thibault-liotard-0b5b02237/" target="_blank"><img
+                        src="./assets/images/LinkedIn_icon.png" class="linkedinIcon" alt="linkedin"></a>
             </div>
             <div class="teamItem bastien">
-                <img src="./assets/images/bastien.jpeg" class="picture" alt="bastien">
+                <img src="./assets/images/bastien.png" class="picture" alt="bastien">
                 <h1>Bastien</h1>
-                <p></p>
-                    <a href="https://www.linkedin.com/in/bastien-bonora/" target="_blank"><img src="./assets/images/LinkedIn_icon.png" class="linkedinIcon" alt="linkedin"></a>
+                <p>Etant passionné dans la sécurité informatique, j'ai aidé à la création des différents menus du jeu
+                    ainsi qu'aux cours qui y sont présent. Actuellement administrateur système et réseaux, j'aimerais
+                    devenir hacker éthique.</p>
+                <a href="https://www.linkedin.com/in/bastien-bonora/" target="_blank"><img
+                        src="./assets/images/LinkedIn_icon.png" class="linkedinIcon" alt="linkedin"></a>
             </div>
             <div class="teamItem simon">
                 <img src="./assets/images/simon.jpeg" class="picture" alt="simon">
                 <h1>Simon</h1>
-                <p></p>
-                    <a href="https://www.linkedin.com/in/simon-goy-a04668238/" target="_blank"><img src="./assets/images/LinkedIn_icon.png" class="linkedinIcon" alt="linkedin"></a>
+                <p>Ma contribution dans ce projet fut de développer toutes les interfaces logique telle que l'inventaire
+                    ou le déplacement permettant de rendre le jeu dynamique. Etant développeur informatique, j'aspire à
+                    devenir un ingénieur informatique.</p>
+                <a href="https://www.linkedin.com/in/simon-goy-a04668238/" target="_blank"><img
+                        src="./assets/images/LinkedIn_icon.png" class="linkedinIcon" alt="linkedin"></a>
             </div>
             <div class="teamItem evan">
                 <img src="./assets/images/evan.jpeg" class="picture" alt="evan">
                 <h1>Evan</h1>
-                <p></p>
-                    <a href="https://www.linkedin.com/in/evan-lamy-649672238/" target="_blank"><img src="./assets/images/LinkedIn_icon.png" class="linkedinIcon" alt="linkedin"></a>
+                <p>Au sein de ce projet, j'ai du faire le level design de la plage en recherchant et positionnant chaque
+                    objet pour pouvoir jouer sur cette carte. Actuellement développeur informatique, j'aimerais
+                    m'orienter dans le développement de jeux vidéos.</p>
+                <a href="https://www.linkedin.com/in/evan-lamy-649672238/" target="_blank"><img
+                        src="./assets/images/LinkedIn_icon.png" class="linkedinIcon" alt="linkedin"></a>
             </div>
         </div>
     </div>
