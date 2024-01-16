@@ -319,6 +319,7 @@ header h1:hover {
     margin-top: 4vh;
     width: 20vw;
     height: 78vh;
+    min-height: 600px;
 }
 
 .team .teamItem .picture {
