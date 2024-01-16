@@ -235,7 +235,7 @@ header h1:hover {
     display: block;
     z-index: 20;
     width: 4vw;
-    top: 325vh;
+    top: 330vh;
     left: 50%;
     transform: translate(-50%);
     transition: all 0.5s;
@@ -294,7 +294,7 @@ header h1:hover {
     display: block;
     z-index: 20;
     width: 4vw;
-    top: 390vh;
+    top: 430vh;
     left: 50%;
     transform: translate(-50%);
     transition: all 0.5s;
