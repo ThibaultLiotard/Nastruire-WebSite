@@ -108,6 +108,7 @@ header h1:hover {
     top: 37vh;
     font-family: Anton;
     color: #FFFCDB;
+    text-shadow: 5px 5px #558ABB;
     font-weight: 400;
     font-size: 4.8vw;
     text-align: center;
@@ -485,6 +486,7 @@ header h1:hover {
         font-weight: 400;
         font-size: 16.8vw;
         text-align: center;
+        text-shadow: 5px 5px #558ABB;
     }
 
 
